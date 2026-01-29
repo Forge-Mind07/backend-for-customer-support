@@ -25,7 +25,7 @@ A backend REST API built using Django and Django REST Framework for managing use
 ---
 
 ## 📁 Project Structure
-
+```
 task/
 ├── manage.py
 ├── .env
@@ -36,7 +36,7 @@ task/
 ├── support/
 ├── myproject/
 └── venv/
-
+```
 
 
 ---
