@@ -43,10 +43,60 @@ task/
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 ```
 git clone <your-repo-url>
 cd task
+```
 
+2️⃣ Create virtual environment
+```
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
 
+3️⃣ Install dependencies
+```
+pip install -r requirements.txt
+```
+4️⃣ Environment variables
 
+Create a .env file in the project root:
+
+SECRET_KEY=your-secret-key
+DEBUG=True
+
+DB_NAME=support_system
+DB_USER=postgres
+DB_PASSWORD=yourpassword
+DB_HOST=localhost
+DB_PORT=5432
+
+5️⃣ Run migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+6️⃣ Start development server
+```
+python manage.py runserver
+```
+
+Server runs at:
+```
+http://127.0.0.1:8000/
+```
+
+🔌 API Testing
+
+You can test APIs using:
+
+Thunder Client
+
+Postman
+
+Example:
+```
+GET /api/support/tickets/
+```
