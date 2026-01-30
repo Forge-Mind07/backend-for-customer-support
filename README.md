@@ -65,12 +65,13 @@ Create a .env file in the project root:
 
 SECRET_KEY=your-secret-key
 DEBUG=True
-
+```
 DB_NAME=support_system
 DB_USER=postgres
 DB_PASSWORD=yourpassword
 DB_HOST=localhost
 DB_PORT=5432
+```
 
 5️⃣ Run migrations
 ```
